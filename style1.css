@@ -1,0 +1,238 @@
+/*for whole body designing*/
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    }
+    /*starting the designing of header*/
+    .header{
+        background-color: #add8e6;
+        margin: 0;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        padding: 8px;
+        padding-right: 20px;
+        
+    }
+        h3{ /*for heading the page*/
+            color: #00008b;
+            font-size: 1.5rem;
+        }
+        .nav-top{ /*for account information of the customer*/
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            margin-left: 10px;
+            align-items: center;
+            }
+            .nav-top >div{
+                padding: 8px;
+                color: #ffff00;
+                font-size: 1.2em;
+                background-color: #00008b;
+                margin: 2px;
+            }
+        @media(max-width: 600px) { /*for phone users resposive media query*/
+        .nav-top, .header{
+            width: 100%;
+            height: auto;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+        }  
+    /* header finished*/ 
+    /*navbar designing*/
+    .nav{
+        background-color: blue;
+        margin: 0;
+        height: 13vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+        .nav >div{ /*for flex items adjusting*/
+            padding: 0%;
+            color: #ffff00;
+            font-size: 1.2em;
+            margin: 10px;
+            flex: 1;
+                        
+        }
+        @media screen and (max-width: 600px) { /*for phone users resposive media query*/
+            .nav {
+                width: 100%;
+                height: auto;
+                flex: 1;
+                flex-wrap: wrap;
+            }
+        }
+    /*finishing the navbar design*/
+    /*starting the main section designing*/
+    .section{
+        display: block;
+        background-color: #a9a9a9;
+        margin: 0;
+        height: 10vh;
+        width: 100vw;
+    }
+        .section >ul{ /*for un-ordered list designing*/
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+            li {
+                float: left;
+            }
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+                    li a:hover {
+                    background-color: #111111;
+                    }
+        @media screen and (max-width: 600px) { /*for phone users resposive media query*/
+            .section {
+                width: 100%;
+                height: auto;
+            }
+        }
+    /*finishing the section part*/
+    /*for figure adjusting as per offer*/
+    #figure{
+        margin-right: 50px;
+        float:left;
+        width: 15em;
+        height:19em;
+    }
+    /*starting the aside part*/
+    #aside{
+        margin: 0%;
+        float: right;
+        height: 19rem;
+        width:20%;
+        overflow: hidden;
+        border: 5px solid darkblue;
+
+    }
+        #aside >ul{ /*for un-ordered list designing*/
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        li {
+                float: left;
+            }
+                #aside li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+                    li a:hover {
+                    background-color: #111111;
+                    }
+
+    @media screen and (max-width: 600px) { /*for phone users resposive media query*/
+        #aside {
+            width: 100%;
+            height: auto;
+        }
+    }
+    /*finishing thge aside part*/ 
+    /*starting the books article for sale*/
+    .articles{
+        margin-top: 20rem;
+        padding: 10px;
+
+    }
+        .books{ /*display with flex*/
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 150px;
+        }
+            .books >div{
+                padding: 10px;
+                color: #ffff00;
+                font-size: 1.2em;
+                background-color: #00008b;
+                margin-bottom: 10px;
+                flex:1,1,auto;
+            }
+            @media screen and (max-width: 600px) { /*for phone users resposive media query*/
+            .books {
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+            }
+        }
+    /* ending the sale part of designing*/
+        .social
+        {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            .social >div{
+                font-size: 1.2em;
+                flex:1,1,auto;
+                padding: 10px;
+                color: darkblue;
+            }
+            .figure1{
+                height:"200px";
+                width: "100%";
+                font-style: italic;
+                
+            }
+    /*finishing the article part*/
+    /*starting the footer part for Information*/
+    .footer{
+        background-color: #00008b;
+        margin: 0;
+        padding: 10px;
+        height: 10vh;
+        width: 100vw;
+        bottom: 0%;
+        text-align: center;
+        color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 1.5rem;
+    }
+        .narrow{
+            flex:1 1 auto;
+        }    
+    .wide{
+            flex:2 1 auto;
+        }
+    @media screen and (max-width: 600px) { /*for phone users resposive media query*/
+        .footer {
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            flex:1
+        }
+    /*ending the front page of website*/  
